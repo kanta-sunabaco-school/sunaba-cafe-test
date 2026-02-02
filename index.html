@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>すなばカフェ</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<!-- ヘッダー -->
+<header class="header">
+  <div class="header-inner">
+    <h1 class="logo">すなばカフェ</h1>
+    <nav class="nav">
+      <a href="#">ご挨拶</a>
+      <a href="#">メニュー</a>
+      <button class="menu-btn">☰</button>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <img id="hero-slide" src="images/hero1.jpg" alt="店内写真">
+
+  <div class="hero-text">
+    <h2>昭和レトロな喫茶店で<br>一息つきませんか？</h2>
+    <p>昔ながらの美味しい珈琲</p>
+  </div>
+</section>
+
+
+<section class="section">
+  <h3 class="section-title">お店の紹介</h3>
+  <p class="section-text">
+    すなばカフェは昭和の雰囲気漂う昔ながらの喫茶店です。<br>
+    落ち着いたレトロな空間で、こだわりのオリジナルコーヒーや
+    自慢のスイーツをお楽しみください。
+  </p>
+</section>
+
+<section class="section">
+  <h3 class="section-title">お品書き</h3>
+  <div class="menu-list">
+    <div class="menu-item">
+      <img src="images/coffee.jpg" alt="コーヒー">
+      <p>オリジナルコーヒー<br><span>¥400〜</span></p>
+    </div>
+    <div class="menu-item">
+      <img src="images/melon.jpg" alt="メロンソーダ">
+      <p>クリームメロンソーダ<br><span>¥650</span></p>
+    </div>
+    <div class="menu-item">
+      <img src="images/cake.jpg" alt="ショートケーキ">
+      <p>ショートケーキ<br><span>¥550</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="section info">
+  <h3 class="section-title">お知らせ情報</h3>
+  <div class="info-box">
+    <p>
+      営業日時：月曜定休　10:00〜18:00<br>
+      住所：熊本県天草市ポルト
+    </p>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© すなばカフェ</p>
+</footer>
+
+<script>
+  const images = [
+    "images/hero1.jpg",
+    "images/hero2.jpg",
+    "images/hero3.jpg"
+  ];
+
+  let index = 0;
+  const slide = document.getElementById("hero-slide");
+
+  setInterval(() => {
+    index = (index + 1) % images.length;
+    slide.src = images[index];
+  }, 4000);
+</script>
+
+
+</body>
+</html>

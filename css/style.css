@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Hiragino Mincho ProN", serif;
+  background: #efe6d6;
+  color: #4a3b2a;
+  line-height: 1.7;
+}
+
+/* header */
+.header {
+  background: #8b6a3e;
+  padding: 15px 0;
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.nav a,
+.menu-btn {
+  color: #fff;
+  margin-left: 15px;
+  text-decoration: none;
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* hero */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: #fff;
+  background: rgba(0,0,0,0.3);
+  padding: 20px;
+}
+
+.hero-text h2 {
+  font-size: 28px;
+}
+
+
+/* section */
+.section {
+  max-width: 1100px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #bfa77a;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.section-text {
+  font-size: 14px;
+}
+
+/* menu */
+.menu-list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.menu-item {
+  background: #fff;
+  padding: 15px;
+  width: 260px;
+  border: 1px solid #d8c9a8;
+}
+
+.menu-item img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.menu-item p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.menu-item span {
+  font-weight: bold;
+}
+
+/* info */
+.info-box {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #d8c9a8;
+  display: block;   /* ← これに変更 */
+}
+
+/* footer */
+.footer {
+  text-align: center;
+  padding: 30px 0;
+  font-size: 12px;
+}
